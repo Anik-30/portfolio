@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    /* box-sizing: border-box; */
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+nav{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span{
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color: var(--main-color);
+}
+
+.btn{
+    font-size: 15px;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8% ;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: var(--main-color);
+    margin: 20px 0px 20px;
+    font-size: 45px;
+}
+h3{
+    color: var(--text-color);
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+p{
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.content button {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content button:hover{
+    color: var(--second-bg-color);
+}
+.image1{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    width: 420px;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 80%;
+    object-fit: cover;
+    border: #0ef 5px solid;
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* .about{
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.about img{
+    height: auto;
+    width: 400px;
+}
+
+.about1{
+    position: absolute;
+    right: 20%;
+}
+ */
+
+ .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color); /* Use the background color you prefer */
+    color: var(--text-color);
+}
+
+.about .main {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about1 {
+    flex: 1;
+    padding: 10px 200px 300px;;
+
+}
+
+.about1 h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about1 h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about1 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about1 button {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about1 button:hover{
+    color: var(--second-bg-color);
+}
+
+.project h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 35px;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-box img{
+    width: 450px;
+    height: auto;
+}
+
+.project-box a{
+    color: var(--text-color);
+    text-decoration: none;
+    margin-top: 2%;
+}
+
+.project-box a:hover{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold
+}
